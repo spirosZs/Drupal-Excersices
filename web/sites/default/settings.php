@@ -77,21 +77,31 @@
  * The next section describes how to customize the $databases array for more
  * specific needs.
  *
- * @code
- * $databases['default']['default'] = [
- *   'database' => 'database_name',
- *   'username' => 'sql_username',
- *   'password' => 'sql_password',
- *   'host' => 'localhost',
- *   'port' => '3306',
- *   'driver' => 'mysql',
- *   'prefix' => '',
- *   'collation' => 'utf8mb4_general_ci',
- * ];
- * @endcode
+  *@code
+  *$databases['default']['default'] = [
+   * 'database' => 'db',
+    *'username' => 'db',
+    *'password' => 'db',
+    *'host' => '127.0.0.1',
+    *'port' => '32771',
+    *'driver' => 'mysql',
+    *'prefix' => '',
+    *'collation' => 'utf8mb4_general_ci',
+  ];
+  *@endcode
  */
 $databases = [];
 
+$databases['default']['default'] = [
+  'database' => 'db',
+  'username' => 'db',
+  'password' => 'db',
+  'host' => '127.0.0.1',
+  'port' => '32771',
+  'driver' => 'mysql',
+  'prefix' => '',
+  'collation' => 'utf8mb4_general_ci',
+];
 /**
  * Customizing database settings.
  *
@@ -258,7 +268,7 @@ $databases = [];
  * directory in the public files path. The setting below allows you to set
  * its location.
  */
-# $settings['config_sync_directory'] = '/directory/outside/webroot';
+ $settings['config_sync_directory'] = '../config/sync';
 
 /**
  * Settings:
