@@ -1,0 +1,26 @@
+# Ignore the Composer vendor directory
+/vendor/
+
+# Ignore Composer PHAR file
+composer.phar
+
+# Ignore sensitive environment files
+.env
+
+# Ignore log files
+*.log
+*.log.*
+
+# Ignore paths that contain user-generated content.
+sites/*/files
+sites/*/private
+
+# Ignore configuration files that may contain sensitive information.
+sites/*/settings*.php
+sites/*/services*.yml
+
+# Ignore multi-site test environment.
+sites/simpletest
+
+
+
