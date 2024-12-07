@@ -1,15 +1,15 @@
 # Ignore the Composer vendor directory
 /vendor/
 
-# Ignore log files
-*.log
-*.log.*
-
 # Ignore paths that contain user-generated content.
-web/sites/default/files/
+web/sites/*/files/
 
-# Ignore configuration files that may contain sensitive information.
-web/sites/default/settings*.php
+# Ignore configuration file.
+web/sites/*/settings*.php
 web/sites/*/services*.yml
+
+*/settings*.php
+
+
 
 
